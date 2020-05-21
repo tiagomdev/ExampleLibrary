@@ -4,8 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- master
-- develop
+  branches:
+      include:
+      - 'master'
+      - 'develop'
 
 # Run pipeline whenever a PR is raised
 pr:
