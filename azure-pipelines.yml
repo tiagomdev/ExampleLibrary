@@ -5,7 +5,7 @@
 
 trigger:
 - master
-- developer
+- develop
 
 # Run pipeline whenever a PR is raised
 pr:
