@@ -7,6 +7,12 @@ trigger:
 - master
 - developer
 
+# Run pipeline whenever a PR is raised
+pr:
+  branches:
+    include:
+    - '*'
+
 pool:
   vmImage: 'windows-latest'
 
